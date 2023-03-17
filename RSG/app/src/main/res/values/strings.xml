@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Test RSG</string>
+    <string name="titleListaUbicacionesActivity">Lista de ubicaciones</string>
+
+    <string name="nombreubicacion">Nombre: Ciudad de México</string>
+    <string name="typeUbicacion">Tipo: TUU_IOLI9</string>
+
+    <string name="nombreProduct">Nombre: Teléfono móvil</string>
+    <string name="weightProdcuto">Peso: 5</string>
+    <string name="volumeProdcuto">Volumen: 10</string>
+    <string name="SSProdcuto">Base de aptitud SS: 10</string>
+
+
 </resources>
