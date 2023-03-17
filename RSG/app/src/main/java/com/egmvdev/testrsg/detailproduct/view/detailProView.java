@@ -28,7 +28,7 @@ public class detailProView extends AppCompatActivity {
             binding.tvNombreProducto.setText(product.getName());
             binding.tvPesoProducto.setText("Peso: " + product.getWeight());
             binding.tvVolumenProducto.setText("Volume: " + product.getVolume());
-            binding.tvSsProducto.setText("SS: " + product.getSs());
+            binding.tvSsProducto.setText("Base de aptitud SS: " + product.getSs());
         }
     }
 }

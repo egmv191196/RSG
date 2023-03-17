@@ -19,6 +19,9 @@ public class listUbiInteractor implements listUbiInteractorInterface {
 
     private listUbiPresenterInterface presenter;
 
+    public listUbiInteractor() {
+    }
+
     public listUbiInteractor(listUbiPresenterInterface presenter) {
         this.presenter = presenter;
     }
@@ -61,9 +64,9 @@ public class listUbiInteractor implements listUbiInteractorInterface {
         ArrayList<Products> productsListFilter = new ArrayList<>();
 
         int idUbicacionActual = 0;
-        for (int i = 0; i < productsList.size(); i++) {
+        for (int i = 0; i < productsList.size(); i++) { //Recorrer arreglo de productos
             double ssFinal = 0.0, ssAux = 0.0;
-            for (int j = 0; j < locationsList.size(); j++) {
+            for (int j = 0; j < locationsList.size(); j++) { //Recorrer  y comparar contra ubicaciones
                 if (locationsList.get(j).getEstado() == 0) {
                     ssAux = calcularSS(locationsList.get(j), productsList.get(i));
                     if (ssAux > ssFinal) {
@@ -94,7 +97,7 @@ public class listUbiInteractor implements listUbiInteractorInterface {
         int idProductoActual = 0;
         for (int i = 0; i <  locationsList.size(); i++) {//Recorrer lista de ubicaciones
             double ssFinal = 0.0, ssAux = 0.0;
-            for (int j = 0; j < productsList.size(); j++) {//Recorrer y comparar productos
+            for (int j = 0; j < productsList.size(); j++) {//Recorrer y comparar contra productos
                 if (productsList.get(j).getSs() == 0) {
                     ssAux = calcularSS(locationsList.get(j), productsList.get(i));
                     if (ssAux > ssFinal) {
